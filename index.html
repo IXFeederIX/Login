@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+        <title>Login</title>
+</head>
+<body>
+ <h1>Bienvenido de vuelta, Usuario</h1>
+     
+        <div class="container"> 
+            <h2>Iniciar Sesion</h2>
+            <form>
+
+     
+          <div>
+            <label for="Username">Username:</label>
+            <input type="text" name="Username" id="Username" placeholder="Username" required>
+          </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+         
+            <input type="submit" value="Login" id="submit" onclick="login()">
+        </form>    
+        <a href="#" onclick="registrarseform()" class="registro">Don't have an account?</a>
+    </div>
+    <div class="container2">
+        <form class="registro">
+            <h3>Registro</h3>
+            <div>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo" required>
+              </div>
+            <div>
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
+            </div>
+             
+            <div>
+              <label for="UsuarioN">Usuario Nuevo</label>
+              <input type="text" name="UsuarioN" id="UsuarioN" placeholder="Nuevo Usuario" required>
+            </div>
+          <div>
+              <label for="Contraseña">Contraseña</label>
+              <input type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña" maxlength="16" required>
+          </div>
+           
+              <input type="submit" value="Registrarse" id="registrarse" required>
+          </form>
+    </div>
+    <footer> Login Inc - 2023</footer>
+    <script src="funcion.js"></script>
+</body>
+</html>

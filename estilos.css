@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Press+Start+2P&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    backdrop-filter: blur(1px);
+    background-image: url("bg.jpg");
+    font-family: 'Kanit', sans-serif;
+
+  }
+  h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px; /* added for visualization */
+    height: 300px; /* added for visualization */
+    border: 1px solid black; /* added for visualization */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    background-color: #fff;
+}
+
+.container2 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px; /* added for visualization */
+    height: 400px; /* added for visualization */
+    border: 1px solid black; /* added for visualization */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    background-color: #fff;
+}
+h3{
+  text-align: center;
+}
+  label {
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: -9999px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+ 
+  }
+  input:hover{
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    50% {
+      border-color: #292929;
+      box-shadow: 0 0 5px #292929;
+    }
+  }
+  h1{
+    position:fixed;
+    top: 0;
+    font-size: 2em;
+    color: #fff;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    height: 2em;
+  }
+ #submit{
+    color: darkgray;
+ }
+ #submit:hover{
+    transition: all 2s ease-in-out;
+  color: rgb(168, 168, 168);
+ }
+ /* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+    
+    input {
+      width: 100%;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+    }
+    
+    h1 {
+      display: none;
+    }
+    
+    footer {
+      font-size: 0.8em;
+    }
+  }
+  
+
+  @media (min-width: 769px) {
+    .container {
+      width: 400px;
+      height: 300px;
+    }
+    
+    input {
+      width: 100%;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+    
+    footer {
+      font-size: 1em;
+    }
+  }
+  .fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
